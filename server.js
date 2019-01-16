@@ -3,7 +3,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var mongo = require('mongoose');
 
-var db = mongo.connect("mongodb://denis_alayza:caracas01@ds255262.mlab.com:55262/star_wars", function(err, response){
+var db = mongo.connect("mongodb://localhost/mongodb", function(err, response){ // add connect mongodb
     if(err){ console.log(err); }
     else{ console.log('Connected to ' + db, ' + ', response ); }
 });
